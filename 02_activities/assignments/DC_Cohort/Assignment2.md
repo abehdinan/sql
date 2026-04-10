@@ -56,7 +56,7 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
+Type 1 will overwrite changes to the CUSTOMER_ADDRESS table, using the UPDATE function. Type 2 will add a new row for each address change, using INSERT, and therefore will retain the address history. Can also add a row to indicate if each address is current or not, and change the value of this using UPDATE.
 ```
 
 ***
@@ -191,5 +191,13 @@ Consider, for example, concepts of labour, bias, LLM proliferation, moderating c
 
 
 ```
-Your thoughts...
+One of the biggest ethical issues that I can think of is bias in labelling data, particularly images. As a surgeon who deals with a lot of wounds, there is
+an increase in the number of wound care apps available to assess and propose treatment plans for wounds. However, the data that these apps are trained on
+are often not representative of the full population (e.g. not enough variety in different skin tones, wound types, etc.), thereby leading to bias in 
+the AI model. this will be the case for all kinds of AI in medicine, where the more developed and research -oriented countries will develop tools that
+systematically disadvantage marginalized populations either nationally or around the world. Also, much of this work in labelling images is likely to be
+outsourced (as referenced in the article, e.g. Mechanical Turk), thereby widening labour inequities and increasing exploitation worldwide. Finally, as AI
+models continue to advance, the trust in these models may be over-inflated, causing us to lose trust in human expertise. Robotics in surgery is a rapidly
+advancing field, but much like the textile example in the article, there is a great degree of variation in patient anatomy, surgical pathology, and 
+patient presentation, which introduces too much nuance for reliably trained models to take the wheel. (Or perhaps this is showing my own bias...)
 ```
